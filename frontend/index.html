@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Waboo / 哇布 · 你的温柔任务伙伴</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/profile.css"></head>
+<body>
+  <main class="shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">✦</span><span>Waboo <small>哇 布</small></span></div><nav><button class="nav active">⌂ <span>今日陪伴</span></button><button class="nav">◷ <span>专注记录</span></button><button class="nav">♡ <span>成长目标</span></button><button class="nav">✿ <span>每日仪式</span></button></nav><div class="side-note"><span>☼</span><p>今天也不必<br>一次走完所有路。</p></div><button class="profile" id="profileBtn" title="修改昵称"><div class="avatar" id="avatar">伙</div><div><b id="profileName">小伙伴</b><small>连续陪伴 12 天</small></div><span>✎</span></button></aside>
+    <section class="content"><header><div><p class="eyebrow">星期三 · 8月27日</p><h1>早上好，<b id="greetingName">小伙伴</b> <span>☀</span></h1><p class="sub">今天的节奏，交给你来决定。</p></div><div class="header-actions"><button class="icon-btn">⌕</button><button class="icon-btn">♧</button><button class="bell">●</button></div></header>
+      <div class="grid"><section class="main-col"><div class="mood-card"><div><span class="tiny-label">今日状态</span><h2>有一点忙，但也在慢慢变好</h2><p>给自己留一点呼吸的空间，完成一件就很棒。</p></div><div class="sun">☀</div><button class="edit-mood">编辑</button></div>
+        <div class="section-title"><div><span class="tiny-label">今日计划</span><h2>一步一步来 <em>3 件任务</em></h2></div><button class="text-btn" id="addBtn">＋ 新任务</button></div>
+        <div class="timeline" id="taskList"></div>
+        <div class="reflection"><div class="reflection-icon">♡</div><div><b>给今天留一句话</b><p>完成或暂停任务后，回来告诉我感受吧。</p></div><button class="round-arrow">→</button></div>
+      </section>
+      <aside class="right-col"><div class="assistant-card"><div class="assistant-top"><div class="bot-avatar">✦</div><div><b>Waboo 哇布</b><span><i></i> 正在陪伴你</span></div><button>···</button></div><div class="chat" id="chat"></div><div class="quick"><button data-text="开始完成产品原型草图">开始计时</button><button data-text="我先休息一下">我先休息</button></div><div class="composer"><input id="message" placeholder="告诉我你现在想做什么…"><button class="mic" id="micBtn">♩</button><button class="send" id="sendBtn">↑</button></div><small class="privacy">⌁ 你的计划只属于你</small></div>
+        <div class="goal-card"><div class="section-title"><div><span class="tiny-label">当前目标</span><h3>完成第一个版本</h3></div><span class="goal-icon">◒</span></div><div class="progress"><div style="width:34%"></div></div><div class="goal-meta"><b>68 <small>/ 200 小时</small></b><span>预计 12 月 31 日完成</span></div><p>按最近的节奏，你正在稳稳靠近目标。</p></div>
+      </aside></div>
+    </section>
+  </main><div class="toast" id="toast"></div><script src="/app.js"></script>
+</body></html>
