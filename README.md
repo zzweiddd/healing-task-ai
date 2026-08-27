@@ -1,2 +1,32 @@
-# healing-task-ai
-An AI companion for task planning, focus tracking and personal reflection.
+# Waboo / 哇布 · 治愈可爱清新的陪伴任务规划 AI
+
+一个前后端分离目录结构的 MVP：任务事实由后端掌控，AI/对话层只负责识别意图和生成温暖的表达。当前无需数据库或 LLM Key 即可运行，方便先验证产品交互。
+
+## 已实现
+
+- 对话创建任务：输入“我今天要背单词、修改论文、晚上跑步”等内容
+- 对话开始、暂停、停止/完成任务计时
+- 今日任务时间轴与实时计时
+- 长期目标进度卡片
+- 理性教练式的温柔陪伴对话
+- 浏览器原生语音识别入口（不支持时仍可使用文字输入）
+- 用户可自定义昵称，点击左下角个人信息即可修改
+
+## 运行
+
+需要 Node.js 18+：
+
+```bash
+npm start
+```
+
+打开 <http://localhost:3000>。
+
+## 目录
+
+```text
+frontend/       静态 UI、样式和交互
+backend/        HTTP API、任务状态与计时事实层
+```
+
+后续接入真实模型时，建议仅替换 `POST /api/chat` 中的意图解析层；`start/pause/stop/complete` 等状态变更仍应由后端校验后执行。生产版再将内存数据替换为 PostgreSQL/SQLite，并补充鉴权、用户隔离、审计日志和测试。

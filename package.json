@@ -1,0 +1,10 @@
+{
+  "name": "waboo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A gentle AI companion for planning and focused work.",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  }
+}
